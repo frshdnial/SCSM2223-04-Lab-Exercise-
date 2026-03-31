@@ -46,7 +46,7 @@ header {
   padding: var(--space-md);
 }
 
-h1, h3 {
+h1 {
   font-family: var(--font-heading);
   color: var(--color-accent);
 }
@@ -80,6 +80,8 @@ h2 {
 }
 
 h3 {
+  font-family: var(--font-heading);
+  color: var(--color-grey-4);
   font-size: 2.2rem;
   line-height: 1.4;
 }
@@ -121,6 +123,24 @@ cite {
   padding: var(--space-md);
 }
 
+li {
+  font-size: 1.6rem;
+  list-height: 1.6;
+}
+
+dt{
+  font-size: 1.7rem;
+  font-family: var(--font-heading);
+  color: var(--color-grey-4);
+}
+
+dd {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--color-grey-1);
+  margin-bottom: var(--space-sm);
+}
+
 code {
   font-size: 1.4rem;
   background-color: var(--color-grey-3);
@@ -149,6 +169,8 @@ footer {
 
   border: 1px solid var(--color-grey-2);
   border-radius: 0.8rem;
+
+  transition: transform 0.2s;
 }
 
 /* BUTTON */
@@ -276,4 +298,31 @@ header {
 .header-image img {
   max-width: 250px;
   border-radius: 50%;
+}
+
+.page-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md); 
+  align-content: start;
+}
+
+.page-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featured-card {
+  grid-column: span 2;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.skills-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: var(--space-md);
 }
