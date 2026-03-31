@@ -207,7 +207,7 @@ a:active {
 }
 
 nav a {
-  font-size: ;
+  font-size: 1.6rem;
   border-radius: 0.3rem;
   padding: var(--space-sm);
 }
@@ -253,6 +253,7 @@ nav a:hover {
 
 nav a.active {
   border-bottom: 3px solid var(--color-accent-2);
+  color: var(--color-accent);
 }
 
 header {
